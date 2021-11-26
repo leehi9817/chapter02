@@ -4,16 +4,15 @@ public class PersonApp {
 
 	public static void main(String[] args) {
 		
-		/* Person 객체
+		//Person 객체
 		Person p01 = new Person("정우성", 45);
+		p01.showInfo();
 		
 		Person p02 = new Person("이정재", 57);
-		
-		p01.showInfo();
 		p02.showInfo();
-		*/
 		
-		//Student 객체
+		
+		//Student 객체 (Person의 자식 클래스)
 		//Person() -> Student()
 		Student s01 = new Student();
 		s01.setName("리정");
@@ -24,6 +23,8 @@ public class PersonApp {
 		//Person(2) -> Student(3)
 		Student s02 = new Student("아이키", 35, "올레디고등학교");
 		s02.showInfo();
+		
+		System.out.println(s01.toString());
 		
 	}
 }

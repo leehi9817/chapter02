@@ -42,9 +42,22 @@ public class Student extends Person {
 	}
 
 	//메소드 - 일반
+	//재정의
+	//같은 이름의 메소드가 부모에도 있을 경우 자식의 메소드 사용
 	@Override
 	public String toString() {
-		return "Student [schoolName=" + schoolName + "]";
+		return "Student [schoolName=" + schoolName + ", name=" + name + ", age=" + age + "]";
 	}
 	
+	//재정의
+	//같은 이름의 메소드가 부모에도 있을 경우 자식의 메소드 사용
+	public void showInfo() {
+		System.out.println("=======================");
+		System.out.println("이름:" + super.getName());
+		System.out.println("나이:" + super.getAge());
+		System.out.println("학교:" + this.schoolName);
+		System.out.println("=======================");
+		System.out.println("");
+	}
+
 }
