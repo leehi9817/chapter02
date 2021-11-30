@@ -62,6 +62,18 @@ public class ShapeApp {
 			tArray[i].draw();
 		}
 		
+		//도형 전체를 관리할 배열을 만든다
+		Shape[] sArray = new Shape[3];
+		
+		//도형 전체를 배열에 넣는다
+		sArray[0] = r01;
+		sArray[1] = c01;
+		sArray[2] = t01;
+		
+		//배열을 순회 하면서 출력한다
+		for(int i=0; i<sArray.length; i++) {
+			sArray[i].draw();
+		}
 	}
 
 }
